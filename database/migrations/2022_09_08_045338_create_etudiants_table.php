@@ -21,9 +21,9 @@ return new class extends Migration
             $table->string('ldn_etudiants', 255);
             $table->string('email_etudiants', 255);
             $table->string('adresse_etudiants', 255);
-            $table->integer('contact_etudiants', 10);
+            $table->string('contact_etudiants', 10);
             $table->string('dossiers_etudiants', 255);
-            $table->string('numero_matricule_moto_etudiants');
+            $table->string('N_moto_etudiants',50);
             $table->foreignId('filieres_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

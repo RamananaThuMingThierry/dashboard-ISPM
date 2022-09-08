@@ -17,7 +17,12 @@ class EtudiantsFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nom_etudiants' => fake()->name(),
+            'prenom_etuidants' => fake()->name(),
+            'ddn_etudiants' => fake()->dateTimeBetween('1990-01-01', '2012-12-31')->format('d/m/Y'),
+            'ldn_etudiants' => fake()->sentence(10),
+            'adresse_etudiants' => fake()->sentence(10), 
+            'email_etudiants' => fake()->unique->email()
         ];
     }
 }

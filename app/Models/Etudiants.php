@@ -14,13 +14,9 @@ class Etudiants extends Model
         'prenom_etudiants',
         'ddn_etudiants',
         'ldn_etudiants',
-        'sexe_etudiants',
         'adresse_etudiants',
-        'contact_etudiants',
         'email_etudiants',
-        'numero_matricule_moto_etudiants',
-        'photo_etudiants',
-        'dossiers_etudiants',
-        'filieres_id'
     ];
+
+    public $timestamps = false;
 }

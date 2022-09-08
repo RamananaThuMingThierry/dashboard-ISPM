@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Etudiants;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class EtudiantsTableSeeder extends Seeder
 {
@@ -14,6 +15,6 @@ class EtudiantsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Etudiants::factory(10)->create();
     }
 }

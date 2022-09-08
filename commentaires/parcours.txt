@@ -9,3 +9,6 @@
 
 4. Création factory
     php artisan make:factory NomFactory
+
+5. Démarrer l'executions factory    
+    php artisan migrate --seed
