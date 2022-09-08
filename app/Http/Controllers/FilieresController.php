@@ -14,7 +14,7 @@ class FilieresController extends Controller
      */
     public function index()
     {
-        //
+        $filieres = Filieres::all();
     }
 
     /**

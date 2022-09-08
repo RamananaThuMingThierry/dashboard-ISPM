@@ -14,3 +14,4 @@
     php artisan migrate --seed
 
 6. Création controller
+    php artisan make:controller NomController --api --model=NomModel

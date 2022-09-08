@@ -18,11 +18,17 @@ class EtudiantsFactory extends Factory
     {
         return [
             'nom_etudiants' => fake()->name(),
-            'prenom_etuidants' => fake()->name(),
-            'ddn_etudiants' => fake()->dateTimeBetween('1990-01-01', '2012-12-31')->format('d/m/Y'),
+            'prenom_etudiants' => fake()->name(),
+            'sexe_etudiants' => 'homme',
+            'ddn_etudiants' => '12-12-22',
             'ldn_etudiants' => fake()->sentence(10),
-            'adresse_etudiants' => fake()->sentence(10), 
-            'email_etudiants' => fake()->unique->email()
+            'adresse_etudiants' => fake()->sentence(10),
+            'contact_etudiants' => 032,
+            'N_moto_etudiants' => 0000,
+            'dossiers_etudiants' => '',
+            'photo_etudiants' => '', 
+            'email_etudiants' => fake()->unique->email(),
+            'filieres_id' => 1
         ];
     }
 }

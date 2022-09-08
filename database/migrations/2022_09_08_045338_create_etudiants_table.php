@@ -18,12 +18,14 @@ return new class extends Migration
             $table->string('nom_etudiants', 255);
             $table->string('prenom_etudiants', 255);
             $table->date('ddn_etudiants');
+            $table->string('sexe_etudiants');
             $table->string('ldn_etudiants', 255);
             $table->string('email_etudiants', 255);
             $table->string('adresse_etudiants', 255);
             $table->string('contact_etudiants', 10);
             $table->string('dossiers_etudiants', 255);
             $table->string('N_moto_etudiants',50);
+            $table->string('photo_etudiants');
             $table->foreignId('filieres_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

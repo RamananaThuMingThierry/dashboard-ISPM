@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Etudiants;
+use App\Models\departements;
 use Illuminate\Http\Request;
 
-class EtudiantsController extends Controller
+class DepartementsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class EtudiantsController extends Controller
      */
     public function index()
     {
-        $etudiants = Etudiants::all();
+        //
     }
 
     /**
@@ -31,10 +31,10 @@ class EtudiantsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Etudiants  $etudiants
+     * @param  \App\Models\departements  $departements
      * @return \Illuminate\Http\Response
      */
-    public function show(Etudiants $etudiants)
+    public function show(departements $departements)
     {
         //
     }
@@ -43,10 +43,10 @@ class EtudiantsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Etudiants  $etudiants
+     * @param  \App\Models\departements  $departements
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Etudiants $etudiants)
+    public function update(Request $request, departements $departements)
     {
         //
     }
@@ -54,10 +54,10 @@ class EtudiantsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Etudiants  $etudiants
+     * @param  \App\Models\departements  $departements
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Etudiants $etudiants)
+    public function destroy(departements $departements)
     {
         //
     }
