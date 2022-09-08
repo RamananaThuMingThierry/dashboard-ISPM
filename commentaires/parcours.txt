@@ -12,3 +12,5 @@
 
 5. Démarrer l'executions factory    
     php artisan migrate --seed
+
+6. Création controller
