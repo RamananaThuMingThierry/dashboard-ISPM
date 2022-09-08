@@ -1,0 +1,11 @@
+1. Création du projet laravel
+    composer create-project laravel/laravel --prefer-dist nom_projet
+
+2. Création modèle et migration
+    php artisan make:model Nom_Model -m 
+
+3. Création Seeder
+    php artisan make:seeder NomSeeder
+
+4. Création factory
+    php artisan make:factory NomFactory
